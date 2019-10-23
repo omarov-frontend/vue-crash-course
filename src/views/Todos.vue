@@ -14,7 +14,7 @@
     <hr>
     <Loader v-if="loading" />
       <TodoList
-        v-else-if="filteredTodos.lenght"
+        v-else-if="filteredTodos.length"
         v-bind:todos="filteredTodos"
         @remove-todo="removeTodo"
       />
@@ -52,16 +52,15 @@ export default {
   // },
   computed: {
     filteredTodos() {
-      if (this.filter === 'all') {
-        return this.todos
-      }
-
       if (this.filter === 'completed') {
         return this.todos.filter(t => t.completed)
       }
 
       if (this.filter === 'not-completed') {
         return this.todos.filter(t => !t.completed)
+      }
+      {
+        return this.todos
       }
     }
   },
