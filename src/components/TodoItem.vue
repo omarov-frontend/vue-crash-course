@@ -20,6 +20,11 @@ export default {
             required: true
         },
         index: Number
+    },
+    filters: {
+        uppercase(value) {
+            return value.toUpperCase()
+        }
     }
 }
 </script>
