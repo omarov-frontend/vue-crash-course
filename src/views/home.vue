@@ -4,6 +4,6 @@
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempore soluta quaerat aliquam vero, delectus itaque totam odio perspiciatis assumenda excepturi veniam reiciendis, fuga omnis culpa officia quasi sequi rem?</p>
 
-        <a href="/todos">Todos</a>
+        <router-link to="/todos">Todos</router-link>
     </div>
 </template>
