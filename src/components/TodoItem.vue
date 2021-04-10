@@ -7,7 +7,7 @@
             {{todo.title | uppercase}}
         </span>
         <button class="rm" 
-            v-on:click="$emit('remove-todo', todo.id)">&times;
+            @:click="$emit('remove-todo', todo.id)">&times;
         </button>
     </li>
 </template>
